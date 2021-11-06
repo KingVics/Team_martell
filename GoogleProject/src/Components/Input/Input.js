@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import '../styles.css';
+import React from 'react';
+import './Input.css';
 
 import source3 from '../resources/voiceSearch.png';
 import source4 from '../resources/searchIcon.jpg';
