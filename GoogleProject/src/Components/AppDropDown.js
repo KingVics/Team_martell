@@ -13,62 +13,60 @@ import appContact from '../resources/googlecontact.png';
 import appDrive  from '../resources/googledrive.png';
 import appCalendar from '../resources/googlecalendar.png';
 
-function AppDropDown (){
-    //const showApps = () =>{};
+function AppDropDown ({show, modalRef}){
     return(
-        <div id='appDropDown' >
-         
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appAccount} alt='google cloud logo'/>
-             <p className='appText'> contact</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appSearch} alt='google search logo'/>
-             <p className='appText'> search</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appMap} alt='google maps logo'/>
-             <p className='appText'> maps</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appYouTube} alt='youtube logo'/>
-             <p className='appText'> youtube</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appNews} alt='google news logo'/>
-             <p className='appText'> news</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appPlayStore} alt='google playstore logo'/>
-             <p className='appText'> play</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appGmail} alt='gmail logo'/>
-    
-             <p className='appText'> news</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appMeet} alt='google meet'/>
-             <p className='appText'> gmail</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages'  src={appChat} alt='google chat'/>
-             <p className='appText'> meet </p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appContact} alt='goggle contact'/>
-             <p className='appText'> chat</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appDrive} alt='goggle drive'/>
-             <p className='appText'> drive</p>
-         </div>
-         <div className='appDropdDownImage-container'>
-             <img className='appImages' src={appCalendar} alt='goggle calendar'/>
-             <p className='appText'> calendar</p>
-         </div>
+        <div id='appDropDown' style={{ display: show ? "block" : "none",}}  ref={modalRef}>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appAccount} alt='google cloud logo'/>
+                <p className='appText'> contact</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appSearch} alt='google search logo'/>
+                <p className='appText'> search</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appMap} alt='google maps logo'/>
+                <p className='appText'> maps</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appYouTube} alt='youtube logo'/>
+                <p className='appText'> youtube</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appNews} alt='google news logo'/>
+                <p className='appText'> news</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appPlayStore} alt='google playstore logo'/>
+                <p className='appText'> play</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appGmail} alt='gmail logo'/>
+
+                <p className='appText'> news</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appMeet} alt='google meet'/>
+                <p className='appText'> gmail</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages'  src={appChat} alt='google chat'/>
+                <p className='appText'> meet </p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appContact} alt='goggle contact'/>
+                <p className='appText'> chat</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appDrive} alt='goggle drive'/>
+                <p className='appText'> drive</p>
+            </div>
+            <div className='appDropdDownImage-container'>
+                <img className='appImages' src={appCalendar} alt='goggle calendar'/>
+                <p className='appText'> calendar</p>
+            </div>
         
-       </div>
+        </div>
     )
 }
 

@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
+import { ThemeProvider } from './context/Theme';
 import PageWrapper from './PageWrapper';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PageWrapper className='pageWrapper' />
+    <ThemeProvider>
+      <PageWrapper className='pageWrapper' />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
