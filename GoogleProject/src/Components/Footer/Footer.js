@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../../context/Theme';
+
 import  './Footer.css';
 
 function Footer(){
+    const theme = useContext(ThemeContext); // Destructuring the context
+    const darkMode = theme.state.darkMode; // Destructuring the state for darkMode
 
  return (
-     <div className="footer">
-         <div className="footer__content">
+    <div className="footer" style={{backgroundColor: darkMode ? 'black' : "#f2f2f2"}}>
+        <div className="footer__content">
             <p>Nigeria</p>
             <hr />
             <div className="bottom__footer__content">

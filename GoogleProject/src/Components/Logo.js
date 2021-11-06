@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles.css';
 
 
-function Logo (props){
+function Logo ({showImage, source, value}){
+    
 
     return (
         <div id='logo-container'>
-            <img id='logo' src= {props.source} alt={props.altText} />
+            {showImage ? 
+                <img id='logo' src= {source} alt="" />
+                : (
+                    <div id='logo-container'>
+                        <h1 style={{marginTop: '10rem'}}>{value}</h1>
+                    </div>
+                )
+            }
+            
         </div>
     )
 }

@@ -4,7 +4,6 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: #f2f2f2;
   color: #767b7f;
 }
 
@@ -25,6 +24,13 @@
   align-items: center;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 468px) {
+  .bottom__footer__content {
+    justify-content: center;
+  }
+}
+
 .section__two {
   text-align: center;
 }
