@@ -152,41 +152,6 @@ nav a {
     left: 2%;
 }
 
-
-/* .bodyButton1 {
-  background-color: #f8f9fa;
-  font-size: 14px;
-  height: 36px;
-  padding: 0 16px;
-  border: none;
-  color: rgb(60, 64, 67);
-  position: relative;
-  top: -14vh;
-  right: 4%;
-}
-
-.bodyButton2 {
-  background-color: #f8f9fa;
-  font-size: 14px;
-  height: 36px;
-  padding: 0 16px;
-  border: none;
-  color: rgb(60, 64, 67);
-  position: relative;
-  top: -18.5vh;
-  left: 4%;
-}
-
-.bodyButton1:hover {
-  border: 1px solid #c6c6c6;
-  box-shadow: 0, 1px, 1px rgba(0, 0, 0, 0.1);
-}
-
-.bodyButton2:hover {
-  border: 1px solid #c6c6c6;
-  box-shadow: 0, 1px, 1px rgba(0, 0, 0, 0.1);
-} */
-
 #appDropDown {
     width: 285px;
     padding: 28px;

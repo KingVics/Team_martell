@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import {ThemeContext} from "../context/Theme"
 import '../styles.css';
 import appAccount from '../resources/googleCloud.jpg';
 import appSearch from '../resources/googleSearch.jpg';
@@ -14,8 +15,10 @@ import appDrive  from '../resources/googledrive.png';
 import appCalendar from '../resources/googlecalendar.png';
 
 function AppDropDown ({show, modalRef}){
+    const theme = useContext(ThemeContext); // Destructuring the context
+    const darkMode = theme.state.darkMode; // Destructuring the state for darkMode
     return(
-        <div id='appDropDown' style={{ display: show ? "flex" : "none",}}  ref={modalRef}>
+        <div id='appDropDown' style={{ display: show ? "flex" : "none", backgroundColor:  darkMode ? "#333" : "#fff"}}  ref={modalRef}>
             <div className='appDropdDownImage-container'>
                 <img className='appImages' src={appAccount} alt='google cloud logo'/>
                 <p className='appText'> contact</p>
