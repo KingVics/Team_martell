@@ -1,9 +1,5 @@
-GETTING START WITH THE APP
+Welcome to TEAM MARTELL SideHustle Group
 
-The project was done using React Js, which is a JavaScript Framework.
-Create React App was used to bootstraped the app using npm.
-
-To start the app, kindly clone the app and run npm install or yarn add to download necessary dependencies.
+Feel Free to check and comment on our projects.
 
 
-A
