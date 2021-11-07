@@ -15,7 +15,7 @@ import appCalendar from '../resources/googlecalendar.png';
 
 function AppDropDown ({show, modalRef}){
     return(
-        <div id='appDropDown' style={{ display: show ? "block" : "none",}}  ref={modalRef}>
+        <div id='appDropDown' style={{ display: show ? "flex" : "none",}}  ref={modalRef}>
             <div className='appDropdDownImage-container'>
                 <img className='appImages' src={appAccount} alt='google cloud logo'/>
                 <p className='appText'> contact</p>
